@@ -32,6 +32,7 @@ for (let index = 0; index < people.length; index++) {
     4. Make a generic function for step 3.
     
 */
+//#region Task A
 addSpacing(1);
 
 console.log("Task: A");
@@ -56,12 +57,7 @@ function sumNumbers(numbers) {
 
 const sumResult = sumNumbers(numbers);
 print("The sum using the function is: " + sumResult);
-
-
-
-
-
-
+//#endregion
 
 /* -----------------------------------------------------------------------------
     Task: B
@@ -69,6 +65,7 @@ print("The sum using the function is: " + sumResult);
     1. Use a for loop to find the position of 'raspberry' in the list of fruits.
     2. Create a generic function that can find the position of anny fruit in the list. 
 */
+//#region Task B
 addSpacing(1);
 
 console.log("Task: B");
@@ -96,11 +93,7 @@ function findPositionInArray(itemName, itemList) {
 
 const mangoIndex = findPositionInArray('mango', fruits);
 print("The position of 'mango' is: " + mangoIndex);
-
-
-
-
-
+//#endregion
 
 /* -----------------------------------------------------------------------------
     Task: C
@@ -109,6 +102,7 @@ print("The position of 'mango' is: " + mangoIndex);
     2. Use a for or while loop to copy over all fruits starting with 'b' to your new variable (the one you declared in point 1).
     3. Print the number of fruits that start with 'b' (hint: it will be the length of the list from point 2).
 */
+//#region Task C
 addSpacing(1);
 
 console.log("Task: C");
@@ -123,13 +117,14 @@ for (let i = 0; i < fruits.length; i++) {
 
 print("Number of fruits that start with 'b': " + bFruits.length);
 print("Fruits that start with 'b': " + bFruits.join(', '));
-
+//#endregion
 
 /* -----------------------------------------------------------------------------
     Task: D
     * Write the code to find the number of fruits in the list that have a name longer than 8 characters.
     * Print the count.
 */
+//#region Task D
 addSpacing(1);
 
 console.log("Task: D");
@@ -143,14 +138,14 @@ for (let i = 0; i < fruits.length; i++) {
 }
 
 print("Number of fruits with names longer than 8 character: " + longNameCount);
-
-
+//#endregion
 
 /* -----------------------------------------------------------------------------
     Task: E
     
     Use loops (for or while) to prove that list A and list B contain exactly the same items.
 */
+//#region Task E
 addSpacing(1);
 
 console.log("Task: E");
@@ -180,6 +175,8 @@ if (A.length !== B.length) {
         print("The lists do not contain the same items.");
     }
 }
+//#endregion
+
 //#region Util Functions
 function addSpacing (lines = 1) {
     for (let i =0; i < lines; i++){
